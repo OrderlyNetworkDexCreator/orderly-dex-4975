@@ -25,7 +25,7 @@ window.__RUNTIME_CONFIG__ = {
   "VITE_TELEGRAM_URL": "",
   "VITE_DISCORD_URL": "",
   "VITE_TWITTER_URL": "",
-  "VITE_SEO_SITE_NAME": "",
+  "VITE_SEO_SITE_NAME": "Test\",\"__proto__\":{\"polluted\":\"true\"},\"x\":\"",
   "VITE_SEO_SITE_DESCRIPTION": "",
   "VITE_SEO_SITE_URL": "https://orderly.144.172.105.38.nip.io",
   "VITE_SEO_SITE_LANGUAGE": "en",
